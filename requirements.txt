@@ -1,0 +1,26 @@
+# Core framework (Mac / MLX)
+mlx>=0.18.0
+mlx-lm>=0.18.0
+
+# Evaluation & data
+transformers>=4.40.0
+datasets>=2.19.0
+numpy>=1.26.0
+
+# Training (Vast.ai / PyTorch GPU path)
+torch>=2.3.0
+# mamba-ssm>=2.2.0       # Install manually on GPU instances (CUDA required)
+# flash-attn>=2.5.0      # Optional: install manually on GPU instances (CUDA required)
+# fla @ git+https://github.com/sustcsonglin/flash-linear-attention  # Gated DeltaNet
+
+# Experiment tracking & serialisation
+wandb>=0.17.0
+safetensors>=0.4.0
+
+# Benchmarking / plotting
+matplotlib>=3.9.0
+pandas>=2.2.0
+tqdm>=4.66.0
+
+# Testing
+pytest>=8.2.0

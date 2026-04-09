@@ -1,0 +1,49 @@
+{
+  "_comment": "Paper-facing 0.5B follow-up plan after the initial 5-way budget scan.",
+  "vocab_size": 50257,
+  "n_layers": 12,
+  "d_model": 800,
+  "num_heads": 16,
+  "latent_dim": 200,
+  "state_dim": 32,
+  "n_experts": 8,
+  "top_k": 2,
+  "d_ff": 1600,
+  "fusion": "gated",
+  "approx_total_params": 493748800,
+  "training": {
+    "dataset": "fineweb",
+    "batch_size": 4,
+    "grad_accumulation_steps": 8,
+    "baseline_max_steps": 4000,
+    "extension_max_steps": 7000,
+    "lr": 0.0001,
+    "warmup_steps": 400,
+    "grad_clip": 0.5,
+    "log_every": 10,
+    "eval_every": 1000,
+    "save_every": 1000,
+    "val_batches": 20,
+    "num_workers": 0,
+    "val_num_workers": 0,
+    "use_amp": true,
+    "gradient_checkpointing": false,
+    "ssm_backend": "minimal",
+    "curriculum_steps_baseline": [
+      [0, 256],
+      [3000, 512]
+    ],
+    "curriculum_steps_extension": [
+      [0, 256],
+      [3000, 512],
+      [5000, 1024]
+    ],
+    "default_baseline_variant": "transformer_dense",
+    "default_extension_variants": [
+      "full",
+      "dense_ffn",
+      "transformer_dense"
+    ],
+    "optional_retrieval_variant": "mla_only"
+  }
+}

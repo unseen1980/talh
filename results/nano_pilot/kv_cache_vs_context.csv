@@ -1,0 +1,15 @@
+seq_len,model,kv_cache_mb
+256,standard_mha,1.048576
+256,mla,0.131072
+512,standard_mha,2.097152
+512,mla,0.262144
+1024,standard_mha,4.194304
+1024,mla,0.524288
+2048,standard_mha,8.388608
+2048,mla,1.048576
+4096,standard_mha,16.777216
+4096,mla,2.097152
+8192,standard_mha,33.554432
+8192,mla,4.194304
+32768,standard_mha,134.217728
+32768,mla,16.777216
