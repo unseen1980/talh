@@ -1,0 +1,4 @@
+ablation,context_len,n_samples,accuracy,avg_ttft_ms
+talh_full,256,50,0.0,156.21784172719344
+talh_full,512,50,0.0,192.19011164386757
+talh_full,1024,50,0.0,346.97305740090087

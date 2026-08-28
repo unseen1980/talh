@@ -1,0 +1,11 @@
+variant,checkpoint,device,dataset,tokenizer,seq_len,val_batches,val_loss,perplexity
+full,experiments/medium_budget/checkpoints/talh_full/best.pt,cuda,fineweb,gpt2,512,25,5.055985,156.958998
+full,experiments/medium_budget/checkpoints/talh_full/best.pt,cuda,fineweb,gpt2,1024,25,5.098235,163.732676
+dense_ffn,experiments/medium_budget/checkpoints/talh_dense_ffn/best.pt,cuda,fineweb,gpt2,512,25,5.03912,154.334213
+dense_ffn,experiments/medium_budget/checkpoints/talh_dense_ffn/best.pt,cuda,fineweb,gpt2,1024,25,5.077191,160.323049
+mla_only,experiments/medium_budget/checkpoints/talh_mla_only/best.pt,cuda,fineweb,gpt2,512,25,5.76463,318.821111
+mla_only,experiments/medium_budget/checkpoints/talh_mla_only/best.pt,cuda,fineweb,gpt2,1024,25,5.884804,359.532135
+ssm_only,experiments/medium_budget/checkpoints/talh_ssm_only/best.pt,cuda,fineweb,gpt2,512,25,5.486073,241.307617
+ssm_only,experiments/medium_budget/checkpoints/talh_ssm_only/best.pt,cuda,fineweb,gpt2,1024,25,5.525319,250.966495
+transformer_dense,experiments/medium_budget/checkpoints/talh_transformer_dense/best.pt,cuda,fineweb,gpt2,512,25,5.597739,269.815605
+transformer_dense,experiments/medium_budget/checkpoints/talh_transformer_dense/best.pt,cuda,fineweb,gpt2,1024,25,5.840398,343.916076

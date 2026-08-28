@@ -1,0 +1,3 @@
+benchmark,accuracy,avg_latency_ms,n_samples,ttt_enabled
+arc,0.0,353.3760759176221,50,False
+arc,0.0,1059.7819291404448,50,True

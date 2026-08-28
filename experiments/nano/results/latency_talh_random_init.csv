@@ -1,0 +1,6 @@
+model,prompt_len,ttft_ms,tpot_ms,tokens_per_sec,n_decode_tokens
+talh_random_init,256,71.15,13.91,71.9,50
+talh_random_init,512,83.12,13.632,73.4,50
+talh_random_init,1024,158.0,13.382,74.7,50
+talh_random_init,2048,312.03,12.66,79.0,50
+talh_random_init,4096,666.09,12.647,79.1,50

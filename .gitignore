@@ -1,0 +1,117 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local agent / machine state
+.claude/
+.codex/
+
+# Nested git metadata should not be published as project content.
+# Note: if a subfolder is itself a git repo, remove or archive its .git
+# directory before staging from the parent repo if you want normal files.
+**/.git/
+
+# Python caches and test artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage/
+htmlcov/
+
+# Environments and packaging output
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# Secrets and local credentials
+*secret*
+*secrets*
+*token*
+*service-key*
+*serviceKey*
+credentials/
+service-keys/
+
+# One-off transfer scripts with local machine assumptions
+deploy/download_to_backup.sh
+deploy/download_ssm_only.sh
+deploy/download_ssm_step.sh
+
+# Training datasets and local downloads
+data/
+datasets/
+fineweb*/
+*.parquet
+*.arrow
+*.sqlite
+*.db
+
+# Model checkpoints and generated weights
+checkpoints/
+experiments/**/checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.gguf
+*.mlx
+
+# Training/runtime logs and experiment trackers
+wandb/
+wandb_export_*.csv
+runs/
+mlruns/
+tensorboard/
+*.log
+experiments/**/logs/
+experiments/**/sync_and_prune.log
+
+# Generated notebook and execution state
+.ipynb_checkpoints/
+experiments/**/run_notebook.log
+
+# LaTeX build artifacts; keep source .tex and final PDFs
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Large/generated archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Keep reader-facing evidence in Git:
+# - README.md
+# - PROJECT_BRIEFING.md
+# - requirements.txt
+# - talh/, scripts/, configs/, tests/, deploy/
+# - paper/*.tex, paper/*.pdf, paper/figures/
+# - experiments/*/results/*.csv and *.json
+# - replication/README.md, replication/results/, replication/scripts/, replication/talh/

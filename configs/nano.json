@@ -1,0 +1,27 @@
+{
+  "_comment": "Nano model config (~15M params) for TinyStories validation on Colab",
+  "vocab_size": 32000,
+  "n_layers": 4,
+  "d_model": 256,
+  "num_heads": 4,
+  "latent_dim": 64,
+  "state_dim": 16,
+  "n_experts": 8,
+  "top_k": 2,
+  "d_ff": 512,
+  "fusion": "gated",
+  "max_seq_len": 2048,
+  "training": {
+    "dataset": "tinystories",
+    "batch_size": 32,
+    "max_steps": 50000,
+    "lr": 3e-4,
+    "warmup_steps": 1000,
+    "curriculum_steps": [
+      [0,     256],
+      [10000, 512],
+      [25000, 1024],
+      [40000, 2048]
+    ]
+  }
+}

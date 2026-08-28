@@ -1,0 +1,83 @@
+[
+  {
+    "artifact_path": "paper/figures/talh_unified_kv_cache.png",
+    "artifact_type": "figure",
+    "source_script": "experiments/nano/results/kv_cache_vs_context.csv",
+    "stage": "experiment1_small_scale",
+    "metadata": {
+      "status": "complete",
+      "claim_ids": ["U1"],
+      "note": "Unified-paper figure copy for KV-cache compression."
+    }
+  },
+  {
+    "artifact_path": "paper/figures/talh_unified_memory_vs_context.png",
+    "artifact_type": "figure",
+    "source_script": "experiments/nano/results/talh_live_memory.csv",
+    "stage": "experiment1_small_scale",
+    "metadata": {
+      "status": "complete",
+      "claim_ids": ["U1"],
+      "note": "Unified-paper figure copy for live memory growth."
+    }
+  },
+  {
+    "artifact_path": "paper/figures/talh_unified_stage1_overview.png",
+    "artifact_type": "figure",
+    "source_script": "experiments/nano/results/talh_results.png",
+    "stage": "experiment1_small_scale",
+    "metadata": {
+      "status": "complete",
+      "claim_ids": ["U1"],
+      "note": "Unified-paper overview figure copied from the completed 15M study."
+    }
+  },
+  {
+    "artifact_path": "experiments/medium/results/edge_0p5b_validation.csv",
+    "artifact_type": "csv",
+    "source_script": "scripts/evaluate_edge_0p5b.py validate",
+    "stage": "experiment2_medium_validation",
+    "metadata": {
+      "status": "pending_runtime",
+      "claim_ids": ["U2"],
+      "dataset": "fineweb",
+      "variants": ["full", "dense_ffn", "mla_only", "ssm_only", "transformer_dense"]
+    }
+  },
+  {
+    "artifact_path": "experiments/medium/results/edge_0p5b_retrieval.csv",
+    "artifact_type": "csv",
+    "source_script": "scripts/evaluate_edge_0p5b.py retrieval",
+    "stage": "experiment2_medium_retrieval",
+    "metadata": {
+      "status": "pending_runtime",
+      "claim_ids": ["U2"],
+      "tokenizer": "gpt2",
+      "variants": ["full", "dense_ffn", "mla_only", "ssm_only", "transformer_dense"]
+    }
+  },
+  {
+    "artifact_path": "experiments/medium/results/edge_0p5b_local_latency.csv",
+    "artifact_type": "csv",
+    "source_script": "scripts/benchmark_local_inference.py",
+    "stage": "experiment3_local_latency",
+    "metadata": {
+      "status": "pending_runtime",
+      "claim_ids": ["U3"],
+      "device_target": "Apple M3 18GB",
+      "variants": ["full", "dense_ffn", "transformer_dense"]
+    }
+  },
+  {
+    "artifact_path": "experiments/medium/results/edge_0p5b_local_memory.csv",
+    "artifact_type": "csv",
+    "source_script": "scripts/benchmark_local_inference.py",
+    "stage": "experiment3_local_memory",
+    "metadata": {
+      "status": "pending_runtime",
+      "claim_ids": ["U3"],
+      "device_target": "Apple M3 18GB",
+      "variants": ["full", "dense_ffn", "transformer_dense"]
+    }
+  }
+]
